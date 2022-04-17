@@ -1,0 +1,4 @@
+# Project exclude paths
+/target/
+/ANGULAR_HTTP_CLIENT_PROJECT.iml
+/.idea/
