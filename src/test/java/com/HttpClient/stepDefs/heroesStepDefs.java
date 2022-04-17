@@ -1,6 +1,7 @@
 package com.HttpClient.stepDefs;
 
 import com.HttpClient.pages.HeroesPage;
+import com.HttpClient.utilities.BrowserUtils;
 import com.HttpClient.utilities.ConfigurationReader;
 import com.HttpClient.utilities.Driver;
 import com.github.javafaker.Faker;
@@ -40,13 +41,13 @@ public class heroesStepDefs {
     }
 
     @Then("verify new hero is added")
-    public void verify_new_hero_is_added() throws InterruptedException {
+    public void verify_new_hero_is_added() {
         String actualResult = heroesPage.getHeroName(heroName);
         System.out.println(actualResult);
 
         String expectedResult = heroName;
         System.out.println(expectedResult);
-        Thread.sleep(2000);
+        BrowserUtils.sleep(2);
 
         assertEquals(expectedResult, actualResult);
     }
@@ -64,9 +65,9 @@ public class heroesStepDefs {
     }
 
     @Then("The user deletes new hero")
-    public void the_user_deletes_new_hero() throws InterruptedException {
+    public void the_user_deletes_new_hero(){
         driver.findElement(By.xpath("//span[text()='" + heroName + "']/../following-sibling::button")).click();
-        Thread.sleep(2000);
+        BrowserUtils.sleep(2);
     }
 
     @Then("verify new hero is deleted")
