@@ -4,7 +4,6 @@ import com.HttpClient.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import org.junit.AfterClass;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -26,10 +25,7 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
-    @AfterClass
-    public void close(){
 
-    }
 
     
 
