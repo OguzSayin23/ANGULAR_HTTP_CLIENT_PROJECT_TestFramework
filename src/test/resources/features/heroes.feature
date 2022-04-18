@@ -1,4 +1,4 @@
-
+@wip
 Feature: Heroes Page
 
   Background:
@@ -8,7 +8,7 @@ Feature: Heroes Page
   Scenario:Add a Hero (Positive scenario)
     When The user adds new hero
     Then verify new hero is added
-@wip
+
   Scenario:Add a Hero (Negative scenario)
     When The user adds new hero name by "  "
     Then verify new hero is not added by name "  "
@@ -21,7 +21,6 @@ Feature: Heroes Page
       | Narco     |
       | Bombasto  |
       | Celeritas |
-
 
   Scenario: Deleting a Hero
     When The user adds new hero

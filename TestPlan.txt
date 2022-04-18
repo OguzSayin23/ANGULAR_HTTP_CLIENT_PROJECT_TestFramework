@@ -1,0 +1,21 @@
+Scenario Questions
+1. You have been hired as a Software Quality Assurance Engineer for a company and you need to determine what is the current state of their testing infrastructure. What do you do?
+
+2. Explain the differences and applicability of the different software test types.
+
+3. You are on day 5 of a 3 week sprint. You realize that you have uncovered what may be a critical issue. What do you do?
+
+4. You are on day 7 of a 3 week sprint and you found that some test cases in an area unrelated to your scope of testing are returning suspicious results. What do you do?
+
+5. What details should a bug ticket include?
+
+6. Fork the following repository: https://github.com/anhhnguyen206/angular-http-client-example.
+
+    a) Include a linked to your new forked repository.
+    b) Ensure you can add a hero, search for a hero and delete a hero
+    c) Write end-to-end tests for these 3 use cases:
+          i. Adding a Hero
+         ii. Searching a Hero
+        iii.Deleting a Hero
+        The framework is up to you. Please ensure that you have detailed out test plans, test cases, positive/negative tests or any other supplementary information.
+    d) What could you do to ensure these tests do not break over time?
