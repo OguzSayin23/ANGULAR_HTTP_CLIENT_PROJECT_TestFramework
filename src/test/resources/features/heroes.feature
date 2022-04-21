@@ -10,8 +10,8 @@ Feature: Heroes Page
     Then verify new hero is added
 
   Scenario:Add a Hero (Negative scenario)
-    When The user adds new hero name by "  "
-    Then verify new hero is not added by name "  "
+    When The user adds new hero name with "  "
+    Then verify no new hero is added with "  " name
 
   Scenario Outline: Search a Hero
     When The user should search hero name "<heroes>"

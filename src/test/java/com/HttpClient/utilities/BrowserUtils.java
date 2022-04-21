@@ -40,12 +40,6 @@ public class BrowserUtils {
 
     }
 
-    public static List<String> getElementsText (List<WebElement> list){
-        List<String> elemTexts = new ArrayList<>();
-        for (WebElement element : list) {
-            elemTexts.add(element.getText());
-        }
-        return elemTexts;
-    }
+
 
 }

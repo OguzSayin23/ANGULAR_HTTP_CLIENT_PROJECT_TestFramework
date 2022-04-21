@@ -77,13 +77,13 @@ public class heroesStepDefs {
         System.out.println("The hero is deleted :" + exist);
     }
 
-    @When("The user adds new hero name by {string}")
-    public void the_user_adds_new_hero_name_by(String string) {
+    @When("The user adds new hero name with {string}")
+    public void the_user_adds_new_hero_name_with(String string) {
         heroesPage.addHero(string);
     }
 
-    @Then("verify new hero is not added by name {string}")
-    public void verify_new_hero_is_not_added_by_name(String string) {
+   @Then("verify no new hero is added with {string} name")
+    public void verify_no_new_hero_is_added_with_name(String string) {
         assertTrue(driver.findElements(By.xpath("//span[text()='"+string+"']/../following-sibling::button")).isEmpty());
     }
 
